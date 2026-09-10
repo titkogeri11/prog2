@@ -8,7 +8,7 @@ class Calc {
 
     static float subtraction(float a, float b) {
         return a - b;
-    } // <- Itt hiányzott a kapcsos zárójel
+    }
 
     static float multiplication(float a, float b) {
         return a * b;
@@ -22,22 +22,19 @@ class Calc {
         return a / b;
     }
 
-    // Visszatérési típus megadva (float), float számokon is működik a maradékképzés
     static float modulo(float a, float b) {
         return a % b;
     }
 
     public static void main(String[] args) {
-        // Létrehozzuk a Scanner példányt
         Scanner myObj = new Scanner(System.in);
 
         System.out.print("num A: ");
-        float numA = myObj.nextFloat(); // Float beolvasása
+        float numA = myObj.nextFloat();
 
         System.out.print("num B: ");
-        float numB = myObj.nextFloat(); // Float beolvasása
+        float numB = myObj.nextFloat();
 
-        // Példa a függvények meghívására és kiírására:
         System.out.println("Összeg: " + addition(numA, numB));
         System.out.println("Különbség: " + subtraction(numA, numB));
         System.out.println("Szorzat: " + multiplication(numA, numB));
