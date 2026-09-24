@@ -44,9 +44,9 @@ public class Account{
         this.annualInterestRate = annualInterestRate;
     }
 
-    public Date getdateCreated(){
-        return this.dateCreated;
-    }
+    //public Date getdateCreated(){
+    //    return 0;
+    //}
 
     public double getMonthlyInterestRate(double annualInterestRate){
             return annualInterestRate / 12;
